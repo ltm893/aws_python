@@ -6,9 +6,9 @@
 ## Standard install from root 
 * scripts require IAM AdministratorAccess role or suitable role
 
-% python3 -m venv .venv
-% source .venv/bin/activate
-% pip install -r requirements.txt
+% python3 -m venv .venv  
+% source .venv/bin/activate   
+% pip install -r requirements.txt. 
 
 ## Testing 
 % pytest tests/ -v. 
