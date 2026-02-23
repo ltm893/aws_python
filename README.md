@@ -1,15 +1,17 @@
 # aws_python
-
+* account/get_daily_costs.py : prints daily costs by service for last 10 days
+* s3/s3_bucket_sizes.py : prints buckets with sizes in descending order
+* s3/restore_bucket.py <bucket_name> : restores older versions in bucket
 
 ## Standard install from root 
-scripts require IAM AdministratorAccess
+* scripts require IAM AdministratorAccess role or suitable role
 
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+% python3 -m venv .venv
+% source .venv/bin/activate
+% pip install -r requirements.txt
 
 ## Testing 
-pytest tests/ -v
+% pytest tests/ -v. 
 tests/test_get_daily_costs.py::test_returns_results PASSED               [  6%]
 tests/test_get_daily_costs.py::test_result_has_correct_keys PASSED       [ 12%]
 tests/test_get_daily_costs.py::test_correct_service_name PASSED          [ 18%]
