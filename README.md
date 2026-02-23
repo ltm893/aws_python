@@ -1,14 +1,14 @@
 # aws_python
 
 
-#Standard install from root 
+## Standard install from root 
 scripts require IAM AdministratorAccess
 
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-#Testing 
+## Testing 
 pytest tests/ -v
 tests/test_get_daily_costs.py::test_returns_results PASSED               [  6%]
 tests/test_get_daily_costs.py::test_result_has_correct_keys PASSED       [ 12%]
